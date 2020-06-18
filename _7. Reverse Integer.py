@@ -15,5 +15,5 @@ class Solution:
 
 s = Solution()
 
-p = s.reverse(-120) 
+p = s.reverse(120) 
 print(p)

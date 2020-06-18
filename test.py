@@ -234,14 +234,14 @@
     
 #     nums.pop(-1)
 #     print(nums)
-#     k -= 1
-nums = [3,0,1]
-print(len(nums))
-print(nums)
-d = range(min(nums),max(nums)+1)
-# print(len(d))
-for i in d:
-    print(i)
+# #     k -= 1
+# nums = [3,0,1]
+# print(len(nums))
+# print(nums)
+# d = range(min(nums),max(nums)+1)
+# # print(len(d))
+# for i in d:
+#     print(i)
 
 # d = range(min(nums),max(nums))
 # print(d)
@@ -256,3 +256,60 @@ for i in d:
 #             pass
 #         else:
 #             print(i)
+
+
+# class Car():
+#     def exclaim(self):
+#         print("carcar")
+#     pass
+
+# class Yugo(Car):
+#     def exclaim(self):
+#         print("Yugo, Much like a car!")
+#     def need_a_push(self):
+#         print('A little help here?')
+# give_me_a_car = Car()
+# give_me_a_yugo = Yugo()
+
+
+# give_me_a_car.exclaim()
+# give_me_a_yugo.exclaim()
+
+
+class Person():
+    def __init__(self, name):
+        self.name = name
+        
+class EmailPerson(Person):
+    def __init__(self, name, email):
+        Person.__init__(self, name)
+        # super().__init__(name)
+        self.email = email
+
+bob = EmailPerson("Bob Frapples", 'bob@frapples.com')
+
+print(bob.name) 
+print(bob.email)
+
+
+
+# class MDPerson():
+#     def __init__(self, name):
+#         # Person.__init__(self, name)
+#         self.name = "Doctor " +  name
+    
+# class JDPerson():
+#     def __init__(self, name):
+#         # Person.__init__(self, name)
+        
+#         self.name = name + ", Esquire"
+        
+
+# person = Person("fudd")
+# doctor = MDPerson('Fudd')
+# lawyer = JDPerson('fudd')
+# print(person.name)
+# print(doctor.name)
+# print(lawyer.name)
+        
+        
